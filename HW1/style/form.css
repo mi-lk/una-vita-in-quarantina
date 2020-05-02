@@ -1,0 +1,119 @@
+form {
+    max-width: 400px;
+    margin: 55px auto;
+    background: rgb(172, 137, 85);
+    border-top: 20px solid rgb(255, 201, 130);
+    border-radius: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+
+form:hover {
+    border-top: 15px solid rgb(255, 222, 179);
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    /* padding: 0; */
+    /* margin: 0 0 20px 0; */
+    font-size: x-large;
+}
+
+form ul {
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    display: block;
+    padding: 9px;
+    /* border: 1px solid whitesmoke; */
+    margin-bottom: 20px;
+    border-radius: 2px;
+    background: white;
+}
+
+form li:last-child {
+    border: none;
+    margin-bottom: 0px;
+    margin-top: -10px;
+    text-align: center;
+    background: rgb(172, 137, 85);
+}
+
+form li > label {
+    display: block;
+    float: none;
+    text-align: left;
+    border-radius: 1px;
+	height: 14px;
+    padding: 2px 5px 6px 5px;
+    margin-bottom: 5px;
+    /* color: rgb(235, 235, 235); */
+    color: rgb(155, 155, 155);
+	font-size: 14px;
+	overflow: hidden;
+}
+
+form input[type="text"], form input[type="email"] {
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+    padding-left: 5px;
+    background: white;
+    color: rgb(150, 150, 150);
+    transition-duration: 0.4s;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus {
+    background: rgb(255, 247, 237);
+    border-radius: 3px;
+	text-align: center;
+	color: rgb(155, 125, 82);
+}
+
+form input[type="submit"] {
+    background: rgb(253, 214, 156);
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-radius: 2px;
+    color: rgb(153, 133, 103);
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+form input[type="submit"]:hover {
+    background: rgb(255, 223, 176);
+    box-shadow: 0 10px 10px rgb(99, 85, 66);
+    color: rgb(177, 134, 70);
+    /* font-size: 18px; */
+    font-weight: 700;
+    /* border-bottom: 5px solid rgb(153, 133, 103); */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: rgb(199, 165, 118);
+}
+
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    font-size: 16px;
+    -webkit-text-fill-color: rgb(155, 125, 82);
+    box-shadow: 0 0 0px 1000px rgb(255, 247, 237) inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgb(255, 247, 237) inset !important;
+    /* background: rgb(255, 247, 237) !important; */
+    
+}

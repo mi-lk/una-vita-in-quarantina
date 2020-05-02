@@ -1,0 +1,89 @@
+.button-container {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: center;
+    background: black;
+}
+
+.button-container button {
+    margin: 20px;
+}
+
+.button {
+    background-color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 700;
+    border: 2px solid rgb(197, 163, 117);
+    color: white;
+    font-size: 15px;
+    transition-duration: 0.8s;
+}
+.button:hover {
+    font-style: italic;
+    border: 4px solid rgb(245, 186, 103);
+    /* background-color: rgb(78, 154, 216); */
+}
+
+.gallery-frame {
+    /* background-color: turquoise; */
+    background-color: whitesmoke;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 15px solid rgb(197, 163, 117);    
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition-duration: 0.5s;
+}
+
+#calm-gallery {
+    display: flex;
+}
+
+.gallery-frame:hover {
+    border-top: 15px solid rgb(245, 186, 103);    
+}
+
+.strip {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+    max-width: 50%;
+    background-color: whitesmoke;
+}
+
+.strip img {
+    width: 100%;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 800px) {
+    .strip {
+        flex: 25%;
+        max-width: 50%;
+    }
+
+    .gallery-frame {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .strip {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .gallery-frame {
+        width: 90%;
+    }
+}
